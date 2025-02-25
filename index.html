@@ -1,20 +1,31 @@
-<!-- // index.html
-/* Jay Kuehmeier */ -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>Jay Kuehmeier | Software Developer</title>
+    <meta name="description" content="Portfolio of Jay Kuehmeier, Software Developer and Innovator">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
+    <nav id="navbar">
         <div class="nav-content">
-            <div class="logo">Jay Kevin Kuehmeier </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+            <div class="logo">Jay Kuehmeier</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -24,46 +35,166 @@
 
     <section id="home">
         <div class="hero">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Software Developer | Creator | Innovator</p>
+            <div class="hero-content">
+                <img src="/api/placeholder/400/400" alt="Jay Kuehmeier" class="hero-image">
+                <h1>Jay Kuehmeier</h1>
+                <p>Software Developer | Problem Solver | Innovator</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="projects">
         <h2>My Projects</h2>
+        <p class="section-intro">Here are some of my recent projects. Each one presented unique challenges and opportunities for growth.</p>
+        
         <div class="project-grid">
             <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Description of your first project</p>
-                <div class="project-links">
-                    <a href="#" class="button">View Project</a>
-                    <a href="#" class="button">GitHub</a>
+                <img src="/api/placeholder/600/400" alt="Project 1" class="project-image">
+                <div class="project-content">
+                    <h3>E-Commerce Platform</h3>
+                    <div class="tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                    <p>A fully responsive e-commerce platform with user authentication, product management, and payment processing integration.</p>
+                    <div class="project-links">
+                        <a href="#" class="button">View Demo</a>
+                        <a href="#" class="button button-outline">GitHub</a>
+                    </div>
                 </div>
             </div>
-            <!-- Will Add More  -->
+            
+            <div class="project-card">
+                <img src="/api/placeholder/600/400" alt="Project 2" class="project-image">
+                <div class="project-content">
+                    <h3>Task Management App</h3>
+                    <div class="tags">
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">CSS Grid</span>
+                    </div>
+                    <p>A productivity application featuring drag-and-drop task organization, reminders, and team collaboration tools.</p>
+                    <div class="project-links">
+                        <a href="#" class="button">View Demo</a>
+                        <a href="#" class="button button-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <img src="/api/placeholder/600/400" alt="Project 3" class="project-image">
+                <div class="project-content">
+                    <h3>Data Visualization Dashboard</h3>
+                    <div class="tags">
+                        <span class="tag">D3.js</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                    </div>
+                    <p>An interactive dashboard displaying complex datasets with customizable charts, filters, and exportable reports.</p>
+                    <div class="project-links">
+                        <a href="#" class="button">View Demo</a>
+                        <a href="#" class="button button-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="about">
         <h2>About Me</h2>
+        
         <div class="about-content">
-            <p>Your introduction and background goes here.</p>
+            <div class="about-image">
+                <img src="/api/placeholder/600/800" alt="Jay Kuehmeier">
+            </div>
+            
+            <div class="about-text">
+                <p>Hello! I'm Jay, a passionate software developer with a focus on creating intuitive and efficient solutions to complex problems. My journey in software development began at [Your University/College] where I earned my degree in [Your Degree].</p>
+                
+                <p>With [X years] of experience, I've had the opportunity to work on diverse projects ranging from web applications to data analysis tools. I'm constantly learning and exploring new technologies to stay at the forefront of innovation.</p>
+                
+                <p>When I'm not coding, you can find me [Your Hobbies/Interests]. I believe that these diverse interests contribute to my creative approach to problem-solving.</p>
+                
+                <div class="skills">
+                    <h3>Skills & Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">RESTful APIs</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Me</h2>
+        <h2>Get In Touch</h2>
+        <p class="section-intro">Have a project in mind or just want to connect? Feel free to reach out!</p>
+        
         <div class="contact-content">
-            <p>Get in touch: jay.kuehmeier@gmail.com</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>jay.kuehmeier@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Your Location</span>
+                </div>
+            </div>
+            
             <div class="social-links">
-                <a href="#">GitHub</a>
-                <a href="https://www.linkedin.com/in/jay-kuehmeier-ab86381b7">LinkedIn</a>
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jay-kuehmeier-ab86381b7" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-dev"></i></a>
+            </div>
+            
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="form-btn">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Jay Kuehmeier. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="logo">Jay Kuehmeier</div>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jay-kuehmeier-ab86381b7" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Jay Kuehmeier. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
